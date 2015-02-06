@@ -12,7 +12,7 @@ $admonition-important-color:    #f91;
     &.note {
         border-left-color: $admonition-note-color;
 
-        > h4 {
+        > .admonition-header {
             color: $admonition-note-color;
         }
     }
@@ -20,7 +20,7 @@ $admonition-important-color:    #f91;
     &.danger {
         border-left-color: $admonition-danger-color;
 
-        > h4 {
+        > .admonition-header {
             color: $admonition-danger-color;
         }
     }
@@ -28,14 +28,14 @@ $admonition-important-color:    #f91;
     &.important {
         border-left-color: $admonition-important-color;
 
-        > h4 {
+        > .admonition-header {
             color: $admonition-important-color;
         }
     }
 
-    > h4,
-    div.wiki & > h4 {
-        margin-top: 0;
+    > .admonition-header {
+        margin: 0 0 10px;
+        font-size: 1.286em;
     }
 
     > *:first-child {

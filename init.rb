@@ -24,7 +24,7 @@ Redmine::Plugin.register :redmine_wiki_admonition do
 
       if head.present?
         head = textilizable(head)
-        head.sub!(/<(p|h\d+)>/, '<h4>').sub!(/<\/(p|h\d+)>/, '</h4>')
+        head.sub!(/<(p|h\d+)>/, '<p class="admonition-header">').sub!(/<\/(p|h\d+)>/, '</p>')
         content = head + body
       else
         content = body
@@ -45,7 +45,7 @@ Redmine::Plugin.register :redmine_wiki_admonition do
 
       if head.present?
         head = textilizable(head)
-        head.sub!(/<(p|h\d+)>/, '<h4>').sub!(/<\/(p|h\d+)>/, '</h4>')
+        head.sub!(/<(p|h\d+)>/, '<p class="admonition-header">').sub!(/<\/(p|h\d+)>/, '</p>')
         content = head + body
       else
         content = body
@@ -66,7 +66,7 @@ Redmine::Plugin.register :redmine_wiki_admonition do
 
       if head.present?
         head = textilizable(head)
-        head.sub!(/<(p|h\d+)>/, '<h4>').sub!(/<\/(p|h\d+)>/, '</h4>')
+        head.sub!(/<(p|h\d+)>/, '<p class="admonition-header">').sub!(/<\/(p|h\d+)>/, '</p>')
         content = head + body
       else
         content = body
