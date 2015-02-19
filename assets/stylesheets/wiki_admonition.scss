@@ -8,6 +8,7 @@ $admonition-important-color:    #f91;
     border: 1px solid #e7e7e7;
     border-left-width: 6px;
     border-radius: 3px;
+    overflow: hidden;
 
     &.note {
         border-left-color: $admonition-note-color;
